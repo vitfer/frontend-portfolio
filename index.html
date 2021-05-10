@@ -1,0 +1,141 @@
+<html>
+
+<head>
+  <title>Aluno da Fullture - FrontEnd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+      <a class="menu" href="#about">Sobre</a>
+      <a class="menu" href="#1">Front 1</a>
+      <a class="menu" href="#2">Front 2</a>
+      <a class="menu" href="#3">Front 3</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <img class="teacher" src="images/eu.jpg" />
+
+    <article>
+      <h1>Vitor Fernandes - FrontEnd</h1>
+      <span>
+        O curso de FrontEnd da Fullture - Dev Full Stack possui 3 módulos e no final do primeiro fiz essa
+        página simples em HTML, CSS, Javascript, Jquery e Bootstrap. Os módulos serão:
+      </span>
+
+      <ul>
+        <li>FrontEnd 1 - HTML, CSS e Javascript</li>
+        <li>FrontEnd 2 - React</li>
+        <li>FrontEnd 3 - Angular</li>
+      </ul>
+
+      <a href="https://www.linkedin.com/in/vitor-luiz-fernandes-junior-b13145180/" target="_blank"
+        class="btn btn-outline orange">Meu LinkedIn</a>
+      <br>
+      <a href="https://github.com/vitfer" target="_blank" class="btn btn-outline orange">Meu GitHub</a>
+
+    </article>
+
+  </section>
+
+  <section id="1">
+    <img src="images/eu2.jpg" />
+
+    <article>
+      <h1>FrontEnd 1</h1>
+
+      <span>Introdução ao desenvolvimento de aplicações web Front End, introdução HTML e suas principais
+        características, criação de estruturas e páginas com HTML, análise de código de páginas conhecidas, apresentação
+        do CSS, suas propriedades, comandos desenvolvimento de páginas utilizando HTML e CSS.</span>
+
+      <ul>
+        <li>Unidade 1 - Introdução ao desenvolvimento de aplicações Web Front End</li>
+        <li>Unidade 2 - Introdução a HTML e análise de códigos HTML</li>
+        <li>Unidade 3 - CSS e desenvolvimento de páginas utilizando HTML e CSS</li>
+        <li>Unidade 4 - Javascript</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="2">
+    <img src="images/eu2.jpg" />
+
+    <article>
+      <h1>FrontEnd 2</h1>
+      <span>Desenvolvimento de aplicações Web Front End. Apresentar o framework React baseado em Javascript,
+        apresentação dos componentes, conceito de Single-Page Application, formulários, introdução aos padrões
+        arquiteturais Flux e Redux e integração com Backend utilizando Rest</span>
+
+      <ul>
+        <li>Unidade 1 - Aplicações Web Front End</li>
+        <li>Unidade 2 - React baseado em Javascript</li>
+        <li>Unidade 3 - Single-Page Application</li>
+        <li>Unidade 4 - Flux, Redux e integração com Backend</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="3">
+    <img src="images/eu2.jpg" />
+
+    <article>
+      <h1>FrontEnd 3</h1>
+      <span>Aplicações Web Front End. Apresentar o framework Angular baseado em Javascript, apresentação dos
+        componentes, conceito de Single-Page Application, formulários, camadas de aplicação, fluxo de dados e integração
+        com Backend</span>
+
+      <ul>
+        <li>Unidade 1 - Desenvolvendo aplicações Web Front End</li>
+        <li>Unidade 2 - Angular baseado em Javascript</li>
+        <li>Unidade 3 - Single-Page Application</li>
+        <li>Unidade 4 - Fluxos de dados e integração com Backend</li>
+      </ul>
+    </article>
+
+  </section>
+
+  <footer>
+    <p>2020 Fullture School. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (200) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 200, function () {
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+</script>
+
+<script src="script.js"></script>
